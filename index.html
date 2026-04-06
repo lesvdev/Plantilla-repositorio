@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Estudiantil - Inicio</title>
+    
+    <!-- ============================================
+         MI PORTAFOLIO ESTUDIANTIL - PÁGINA PRINCIPAL
+         ============================================
+         
+         INSTRUCCIONES PARA ESTUDIANTES:
+         
+         Este es tu archivo principal. Aquí puedes:
+         1. Cambiar tu información personal
+         2. Modificar el texto de las secciones
+         3. Agregar más contenido
+         
+         SECCIONES DEL ARCHIVO:
+         1. INFORMACIÓN PERSONAL (Personalizable)
+         2. NAVEGACIÓN (Personalizable)
+         3. PERFIL (Personalizable)
+         4. SOBRE MÍ (Personalizable)
+         5. EDITOR DE CÓDIGO (Personalizable)
+         
+         ⚠️ NO MODIFICAR: Las etiquetas HTML estructurales
+         
+         ============================================ -->
+    
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Icono de la página (favicon) -->
+    <link rel="icon" href="images/icono.png" type="image/png">
+</head>
+<body>
+    
+    <!-- ============================================
+         SECCIÓN 1: NAVEGACIÓN SUPERIOR
+         ============================================
+         Aquí están los enlaces a las diferentes
+         secciones de tu portafolio.
+         Puedes cambiar los nombres de los enlaces.
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo y nombre de la institución -->
+            <div class="logo">
+                <!-- INSTRUCCIÓN: Reemplaza "escudo.png" con el nombre 
+                     de tu archivo de imagen del escudo de la institución -->
+                <img src="./images/escudo-casd.png" alt="Escudo Institución" class="logo-institucion" 
+                     onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22><rect fill=%22%23ddd%22 width=%2250%22 height=%2250%22/><text x=%2225%22 y=%2230%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2212%22>🏫</text></svg>'">
+                <span class="logo-texto">Mi Institución</span>
+            </div>
+            
+            <!-- Menú de navegación -->
+            <!-- INSTRUCCIÓN: Puedes cambiar los nombres de los menús -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="activo">🏠 Inicio</a></li>
+                <li><a href="artistica.html">🎨 Artística</a></li>
+                <li><a href="tecnologia.html">💻 Tecnología</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         SECCIÓN 2: PERFIL PERSONAL
+         ============================================
+         Aquí va tu información personal.
+         INSTRUCCIONES DE PERSONALIZACIÓN:
+         ============================================ -->
+    <header class="seccion-perfil">
+        <div class="perfil-container">
+            <!-- FOTO DE PERFIL -->
+            <!-- INSTRUCCIÓN: 
+                 1. Guarda tu foto en la carpeta "images"
+                 2. Cambia "mi-foto.png" por el nombre de tu archivo
+                 3. La imagen debe ser cuadrada (recomendado: 400x400px) -->
+            <img src="images/mi-foto.png" alt="Mi Foto de Perfil" class="foto-perfil"
+                 onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22180%22><rect fill=%22%23f0f0f0%22 width=%22180%22 height=%22180%22/><text x=%2290%22 y=%22100%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2260%22>👤</text></svg>'">
+            
+            <!-- NOMBRE COMPLETO -->
+            <!-- INSTRUCCIÓN: Escribe tu nombre completo aquí -->
+            <h1 class="nombre-estudiante">[Tu Nombre Completo]</h1>
+            
+            <!-- INFORMACIÓN ACADÉMICA -->
+            <!-- INSTRUCCIÓN: Modifica tu grado e institución -->
+            <p class="info-academica">
+                <span>🎓 Grado: [Tu Grado]</span>
+                <span>|</span>
+                <span>🏫 [Nombre de tu Institución]</span>
+            </p>
+        </div>
+    </header>
+    
+    <!-- ============================================
+         SECCIÓN 3: SOBRE MÍ
+         ============================================
+         Aquí cuentas más sobre ti, tus hobbies
+         y tus objetivos de aprendizaje.
+         ============================================ -->
+    <section class="seccion-sobremi">
+        <div class="container">
+            <h2 class="titulo-seccion">📖 Conóceme</h2>
+            
+            <div class="sobremi-grid">
+                <!-- TARJETA 1: SOBRE MÍ -->
+                <article class="tarjeta">
+                    <h3 class="tarjeta-titulo">
+                        <span class="tarjeta-icono">👋</span>
+                        Sobre Mí
+                    </h3>
+                    <!-- INSTRUCCIÓN: Escribe una descripción sobre ti -->
+                    <p>
+                        ¡Hola! Soy <strong>[Tu nombre]</strong> y tengo <strong>[Tu edad]</strong> años. 
+                        Me caracterizo por ser <strong>[tus cualidades: creativo, responsable, etc.]</strong>.
+                        <br><br>
+                        Nací en <strong>[Tu ciudad]</strong> y vivo con <strong>[tu familia]</strong>.
+                        Lo que más me gusta de la escuela es <strong>[tus materias favoritas o actividades]</strong>.
+                        <br><br>
+                        <!-- Agrega más información sobre ti -->
+                        Mi comida favorita es <strong>[tu comida favorita]</strong> y mi color 
+                        preferido es <strong>[tu color favorito]</strong>.
+                    </p>
+                </article>
+                
+                <!-- TARJETA 2: MIS PASATIEMPOS -->
+                <article class="tarjeta">
+                    <h3 class="tarjeta-titulo">
+                        <span class="tarjeta-icono">🎯</span>
+                        Mis Pasatiempos
+                    </h3>
+                    <!-- INSTRUCCIÓN: Lista tus hobbies -->
+                    <ul class="lista-hobbies">
+                        <li><strong>[Pasatiempo 1]</strong> - Describe brevemente qué te gusta hacer</li>
+                        <li><strong>[Pasatiempo 2]</strong> - ¿Desde cuándo lo practicas?</li>
+                        <li><strong>[Pasatiempo 3]</strong> - ¿Con quién lo compartes?</li>
+                        <li><strong>[Pasatiempo 4]</strong> - ¿Por qué te gusta?</li>
+                        <li><strong>[Pasatiempo 5]</strong> - Agrega todos los que quieras</li>
+                    </ul>
+                </article>
+                
+                <!-- TARJETA 3: LO QUE DESEO APRENDER -->
+                <article class="tarjeta">
+                    <h3 class="tarjeta-titulo">
+                        <span class="tarjeta-icono">💡</span>
+                        Lo Que Deseo Aprender
+                    </h3>
+                    <!-- INSTRUCCIÓN: Escribe tus objetivos en informática -->
+                    <p>
+                        En esta clase de <strong>Informática</strong>, espero aprender:
+                    </p>
+                    <ul class="lista-hobbies">
+                        <li>🐍 <strong>Programación en Python</strong> - [Tu objetivo]</li>
+                        <li>🌐 <strong>Desarrollo web</strong> - [Tu objetivo]</li>
+                        <li>📊 <strong>Manejo de datos</strong> - [Tu objetivo]</li>
+                        <li>🎨 <strong>Diseño digital</strong> - [Tu objetivo]</li>
+                        <li>🤖 <strong>Otros temas</strong> - [Especifica qué más quieres aprender]</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <em>"[Escribe aquí una frase motivadora sobre el aprendizaje]"</em>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SECCIÓN 4: EDITOR DE CÓDIGO PYTHON
+         ============================================
+         Esta sección tiene dos partes:
+         1. Lista de archivos Python desde GitHub
+         2. Editor y ejecutor de código
+         ============================================ -->
+    <section class="seccion-codigo">
+        <div class="container">
+            <h2 class="titulo-seccion">🐍 Mis Proyectos Python</h2>
+            
+            <div class="codigo-grid">
+                <!-- PANEL 1: ARCHIVOS PYTHON -->
+                <div class="panel-codigo">
+                    <div class="panel-header">
+                        <span class="panel-titulo">📁 Mis Archivos Python</span>
+                    </div>
+                    <div class="panel-contenido">
+                        <p style="margin-bottom: 1rem; color: var(--texto-secundario);">
+                            Haz clic en "Ver código" para cargar el archivo en el editor:
+                        </p>
+                        
+                        <!-- INSTRUCCIÓN: Agrega tus archivos de GitHub aquí
+                             Reemplaza las URLs con los enlaces raw de GitHub -->
+                        <ul class="lista-archivos">
+                            <!-- Duplicar esta sección cada vez que se agregue un archivo nuevo.-->
+                            <li class="archivo-item">
+                                <div class="archivo-info">
+                                    <span class="archivo-icono">🐍</span>
+                                    <span class="archivo-nombre">01_Hola_mundo</span>
+                                </div>
+                                <!-- INSTRUCCIÓN: Reemplaza la URL con tu enlace de GitHub -->
+                                <a href="./python-files/01_Hola_mundo.py" 
+                                   target="_blank" class="btn-ver">Ver código</a>
+                            </li>
+                            <!-- Hasta aqui.-->
+                            
+                            
+                        </ul>
+                        
+                        <div style="margin-top: 1.5rem; padding: 1rem; background-color: var(--fondo-tarjeta); border-radius: 10px;">
+                            <p style="font-size: 0.9rem; color: var(--texto-secundario);">
+                                <strong>💡 Tip:</strong> Para agregar más archivos, copia el código de uno de los items de arriba y pega debajo, cambiando el nombre y la URL.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PANEL 2: EDITOR DE CÓDIGO -->
+                <div class="panel-codigo">
+                    <div class="panel-header">
+                        <span class="panel-titulo">✏️ Editor de Código</span>
+                    </div>
+                    <div class="panel-contenido">
+                        <p style="margin-bottom: 1rem; color: var(--texto-secundario);">
+                            Escribe tu código Python aquí o selecciona un ejemplo:
+                        </p>
+                        
+                        <!-- Botones de ejemplos -->
+                        <div style="margin-bottom: 1rem;">
+                            <button onclick="cargarEjemplo('hola')" class="btn-ver" style="margin-right: 0.5rem; margin-bottom: 0.5rem;">
+                                👋 Hola Mundo
+                            </button>
+                            <button onclick="cargarEjemplo('variables')" class="btn-ver" style="margin-right: 0.5rem; margin-bottom: 0.5rem;">
+                                📦 Variables
+                            </button>
+                            <button onclick="cargarEjemplo('matematicas')" class="btn-ver" style="margin-bottom: 0.5rem;">
+                                🔢 Matemáticas
+                            </button>
+                        </div>
+                        
+                        <!-- Área de edición de código -->
+                        <textarea id="editor-codigo" class="editor-codigo" placeholder="# Escribe tu código Python aquí...
+# Ejemplo:
+print('¡Hola, mundo!')
+
+nombre = 'Tu nombre'
+print('Me llamo', nombre)
+
+# Puedes hacer operaciones:
+resultado = 10 + 5
+print('10 + 5 =', resultado)"></textarea>
+                        
+                        <!-- Botones de acción -->
+                        <div class="panel-botones">
+                            <button id="btn-ejecutar" class="btn-ejecutar">
+                                ▶️ Ejecutar Código
+                            </button>
+                            <button id="btn-limpiar" class="btn-limpiar">
+                                🗑️ Limpiar
+                            </button>
+                        </div>
+                        
+                        <!-- Consola de salida -->
+                        <div style="margin-top: 1rem;">
+                            <p style="margin-bottom: 0.5rem; color: var(--texto-secundario); font-weight: 600;">
+                                📟 Resultado:
+                            </p>
+                            <div id="consola-salida" class="consola-salida">
+📟 Consola lista para nuevos resultados...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         FOOTER (PIE DE PÁGINA)
+         ============================================ -->
+    <footer class="footer">
+        <p class="footer-texto">
+            © <span class="footer-anio">2024</span> - Portafolio Estudiantil de 
+            <strong>[Tu Nombre]</strong> | 
+            <strong>[Nombre de tu Institución]</strong>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Creado con ❤️ en la clase de Informática
+        </p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS JAVASCRIPT
+         ============================================ -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

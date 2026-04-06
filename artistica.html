@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Estudiantil - Artística</title>
+    
+    <!-- ============================================
+         MI PORTAFOLIO ESTUDIANTIL - SECCIÓN ARTÍSTICA
+         ============================================
+         
+         INSTRUCCIONES PARA ESTUDIANTES:
+         
+         Esta es tu galería de arte digital.
+         Aquí puedes mostrar tus dibujos, pinturas,
+         fotografías o cualquier obra artística.
+         
+         SECCIONES DEL ARCHIVO:
+         1. NAVEGACIÓN (Igual que en index.html)
+         2. PERFIL (Igual que en index.html)
+         3. GALERÍA DE ARTE (Personalizable)
+         4. CARRUSEL DE IMÁGENES (Personalizable)
+         
+         ============================================ -->
+    
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Icono de la página -->
+    <link rel="icon" href="images/icono.png" type="image/png">
+</head>
+<body>
+    
+    <!-- ============================================
+         NAVEGACIÓN SUPERIOR
+         ============================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./images/escudo-casd.png" alt="Escudo Institución" class="logo-institucion"
+                     onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2250%22 height=%2250%22><rect fill=%22%23ddd%22 width=%2250%22 height=%2250%22/><text x=%2225%22 y=%2230%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2212%22>🏫</text></svg>'">
+                <span class="logo-texto">Mi Institución</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="artistica.html" class="activo">🎨 Artística</a></li>
+                <li><a href="tecnologia.html">💻 Tecnología</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ============================================
+         SECCIÓN DE PERFIL
+         ============================================
+         INSTRUCCIÓN: Mantén la misma información
+         que en index.html para consistencia
+         ============================================ -->
+    <header class="seccion-perfil">
+        <div class="perfil-container">
+            <!-- FOTO DE PERFIL -->
+            <img src="images/mi-foto.png" alt="Mi Foto de Perfil" class="foto-perfil"
+                 onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22180%22><rect fill=%22%23f0f0f0%22 width=%22180%22 height=%22180%22/><text x=%2290%22 y=%22100%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2260%22>👤</text></svg>'">
+            
+            <!-- NOMBRE COMPLETO -->
+            <h1 class="nombre-estudiante">[Tu Nombre Completo]</h1>
+            
+            <!-- INFORMACIÓN ACADÉMICA -->
+            <p class="info-academica">
+                <span>🎓 Grado: [Tu Grado]</span>
+                <span>|</span>
+                <span>🏫 [Nombre de tu Institución]</span>
+            </p>
+        </div>
+    </header>
+    
+    <!-- ============================================
+         SECCIÓN DE GALERÍA DE ARTE
+         ============================================
+         Aquí está tu carrusel de imágenes artísticas.
+         
+         INSTRUCCIONES PARA AGREGAR IMÁGENES:
+         
+         OPCIÓN 1: Desde GitHub (Recomendado)
+         1. Sube tus imágenes a tu repositorio de GitHub
+         2. Obtén el enlace "raw" de cada imagen
+         3. Reemplaza las URLs en los src de abajo
+         
+         OPCIÓN 2: Carpeta local
+         1. Guarda las imágenes en la carpeta "images"
+         2. Cambia las rutas a: images/tu-imagen.jpg
+         ============================================ -->
+    <section class="seccion-artistica">
+        <div class="container">
+            <h2 class="titulo-seccion">🎨 Mi Galería de Arte</h2>
+            
+            <!-- CARRUSEL DE IMÁGENES -->
+            <div class="carrusel-container">
+                
+                <!-- SLIDE 1 -->
+                <!-- INSTRUCCIÓN: Reemplaza la URL con tu imagen de GitHub -->
+                <div class="carrusel-slide activo">
+                    <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/images/obra1.jpg" 
+                         alt="Obra de arte 1" class="carrusel-imagen"
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect fill=%22%23f0e6ff%22 width=%22800%22 height=%22500%22/><text x=%22400%22 y=%22250%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2224%22>🎨 Imagen 1 - Agrega tu obra aquí</text></svg>'">
+                    <div class="carrusel-info">
+                        <!-- INSTRUCCIÓN: Escribe el título de tu obra -->
+                        <h3 class="carrusel-titulo">[Título de tu obra 1]</h3>
+                        <!-- INSTRUCCIÓN: Escribe la descripción -->
+                        <p class="carrusel-descripcion">
+                            [Describe tu obra: técnica utilizada, materiales, inspiración, año de creación, etc.]
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- SLIDE 2 -->
+                <div class="carrusel-slide">
+                    <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/images/obra2.jpg" 
+                         alt="Obra de arte 2" class="carrusel-imagen"
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect fill=%22%23ffe6f0%22 width=%22800%22 height=%22500%22/><text x=%22400%22 y=%22250%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2224%22>🎭 Imagen 2 - Agrega tu obra aquí</text></svg>'">
+                    <div class="carrusel-info">
+                        <h3 class="carrusel-titulo">[Título de tu obra 2]</h3>
+                        <p class="carrusel-descripcion">
+                            [Describe tu obra: técnica utilizada, materiales, inspiración, año de creación, etc.]
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- SLIDE 3 -->
+                <div class="carrusel-slide">
+                    <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/images/obra3.jpg" 
+                         alt="Obra de arte 3" class="carrusel-imagen"
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect fill=%22%23e6f7ff%22 width=%22800%22 height=%22500%22/><text x=%22400%22 y=%22250%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2224%22>🖼️ Imagen 3 - Agrega tu obra aquí</text></svg>'">
+                    <div class="carrusel-info">
+                        <h3 class="carrusel-titulo">[Título de tu obra 3]</h3>
+                        <p class="carrusel-descripcion">
+                            [Describe tu obra: técnica utilizada, materiales, inspiración, año de creación, etc.]
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- SLIDE 4 -->
+                <div class="carrusel-slide">
+                    <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/images/obra4.jpg" 
+                         alt="Obra de arte 4" class="carrusel-imagen"
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect fill=%22%23fff5e6%22 width=%22800%22 height=%22500%22/><text x=%22400%22 y=%22250%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2224%22>✏️ Imagen 4 - Agrega tu obra aquí</text></svg>'">
+                    <div class="carrusel-info">
+                        <h3 class="carrusel-titulo">[Título de tu obra 4]</h3>
+                        <p class="carrusel-descripcion">
+                            [Describe tu obra: técnica utilizada, materiales, inspiración, año de creación, etc.]
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- SLIDE 5 -->
+                <div class="carrusel-slide">
+                    <img src="https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/images/obra5.jpg" 
+                         alt="Obra de arte 5" class="carrusel-imagen"
+                         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22><rect fill=%22%23e6ffe6%22 width=%22800%22 height=%22500%22/><text x=%22400%22 y=%22250%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2224%22>🖌️ Imagen 5 - Agrega tu obra aquí</text></svg>'">
+                    <div class="carrusel-info">
+                        <h3 class="carrusel-titulo">[Título de tu obra 5]</h3>
+                        <p class="carrusel-descripcion">
+                            [Describe tu obra: técnica utilizada, materiales, inspiración, año de creación, etc.]
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- BOTONES DE NAVEGACIÓN DEL CARRUSEL -->
+                <button class="carrusel-btn anterior" aria-label="Imagen anterior">❮</button>
+                <button class="carrusel-btn siguiente" aria-label="Imagen siguiente">❯</button>
+                
+            </div>
+            
+            <!-- INDICADORES DEL CARRUSEL (puntos) -->
+            <div class="carrusel-indicadores">
+                <button class="indicador activo" aria-label="Ir a imagen 1"></button>
+                <button class="indicador" aria-label="Ir a imagen 2"></button>
+                <button class="indicador" aria-label="Ir a imagen 3"></button>
+                <button class="indicador" aria-label="Ir a imagen 4"></button>
+                <button class="indicador" aria-label="Ir a imagen 5"></button>
+            </div>
+            
+            <!-- INSTRUCCIONES ADICIONALES -->
+            <div style="margin-top: 3rem; padding: 2rem; background-color: var(--fondo-tarjeta); border-radius: 20px; border: 2px dashed var(--color-borde);">
+                <h3 style="color: var(--color-acento); margin-bottom: 1rem;">📋 ¿Cómo agregar más imágenes?</h3>
+                <ol style="color: var(--texto-secundario); line-height: 2; padding-left: 1.5rem;">
+                    <li>Copia el código de uno de los <code>&lt;div class="carrusel-slide"&gt;</code> de arriba</li>
+                    <li>Pégalo después del último slide</li>
+                    <li>Cambia el número de la imagen en el <code>src</code></li>
+                    <li>Actualiza el título y la descripción</li>
+                    <li>Agrega un nuevo indicador en la sección de puntos</li>
+                </ol>
+                <p style="margin-top: 1rem; color: var(--texto-secundario);">
+                    <strong>💡 Tip:</strong> El carrusel cambia automáticamente cada 5 segundos. 
+                    Puedes modificar este tiempo en el archivo <code>js/script.js</code> buscando <code>tiempoTransicion</code>.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <p class="footer-texto">
+            © <span class="footer-anio">2024</span> - Portafolio Estudiantil de 
+            <strong>[Tu Nombre]</strong> | 
+            <strong>[Nombre de tu Institución]</strong>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Creado con ❤️ en la clase de Informática
+        </p>
+    </footer>
+    
+    <!-- ============================================
+         SCRIPTS JAVASCRIPT
+         ============================================ -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

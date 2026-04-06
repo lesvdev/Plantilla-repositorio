@@ -1,0 +1,779 @@
+/* ============================================
+   MI PORTAFOLIO ESTUDIANTIL - ESTILOS PRINCIPALES
+   ============================================
+   
+   INSTRUCCIONES PARA ESTUDIANTES:
+   
+   SECCIÓN 1: PALETA DE COLORES (Personalizable)
+   - Puedes cambiar los colores pastel por los que más te gusten
+   - Solo modifica los valores hexadecimares (#XXXXXX)
+   - Usa herramientas como https://colorhunt.co para encontrar paletas
+   
+   SECCIÓN 2: TIPOGRAFÍA (Personalizable)
+   - Puedes cambiar el tipo de letra (font-family)
+   
+   SECCIÓN 3: DISEÑO RESPONSIVO (NO MODIFICAR)
+   - Esta sección hace que tu página se vea bien en celulares y tablets
+   - NO modifiques nada de la SECCIÓN 3 para evitar daños
+   
+   ============================================ */
+
+/* ============================================
+   SECCIÓN 1: PALETA DE COLORES PERSONALIZABLE
+   ============================================
+   Cambia estos colores por tus favoritos!
+   Ejemplos de colores pastel:
+   - Rosa pastel: #FFB6C1
+   - Azul pastel: #B6D7FF
+   - Verde pastel: #B6FFB6
+   - Lila pastel: #E6B6FF
+   - Melocotón: #FFD4B6
+   - Menta: #B6FFE6
+   ============================================ */
+
+:root {
+    /* Colores principales - ¡PERSONALIZA ESTOS! */
+    --color-primario: #297fd4;      /* Verde menta pastel */
+    --color-secundario: #bef76f;    /* Amarillo pastel */
+    --color-terciario: #F8C471;     /* Naranja pastel */
+    
+    /* Colores de fondo - ¡PERSONALIZA ESTOS! */
+    --fondo-principal: #FAF9F6;     /* Blanco hueso */
+    --fondo-seccion: #FFFFFF;       /* Blanco puro */
+    --fondo-tarjeta: #F5F5F5;       /* Gris muy claro */
+    
+    /* Colores de texto - ¡PERSONALIZA ESTOS! */
+    --texto-principal: #4A4A4A;     /* Gris oscuro */
+    --texto-secundario: #7F8C8D;    /* Gris medio */
+    --texto-claro: #FFFFFF;         /* Blanco */
+    
+    /* Colores de acento - ¡PERSONALIZA ESTOS! */
+    --color-acento: #3f1b8c;        /* Lila pastel */
+    --color-borde: #E0E0E0;         /* Gris claro */
+    
+    /* Tipografía - ¡PERSONALIZA ESTA! */
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-titulos: 'Georgia', serif;
+    
+    /* Tamaños de fuente */
+    --tamano-titulo: 2.5rem;
+    --tamano-subtitulo: 1.8rem;
+    --tamano-texto: 1rem;
+    --tamano-pequeno: 0.9rem;
+}
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ============================================
+   NAVEGACIÓN SUPERIOR
+   ============================================ */
+
+.navbar {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-institucion {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--fondo-seccion);
+    border: 3px solid var(--texto-claro);
+}
+
+.logo-texto {
+    color: var(--texto-claro);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.activo {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   SECCIÓN DE PERFIL (BANNER INICIAL)
+   ============================================ */
+
+.seccion-perfil {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.perfil-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--texto-claro);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    background-color: var(--fondo-seccion);
+}
+
+.nombre-estudiante {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-titulo);
+    color: var(--texto-claro);
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-academica {
+    color: var(--texto-claro);
+    font-size: var(--tamano-subtitulo);
+    opacity: 0.95;
+}
+
+.info-academica span {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/* ============================================
+   SECCIÓN SOBRE MÍ
+   ============================================ */
+
+.seccion-sobremi {
+    padding: 4rem 2rem;
+    background-color: var(--fondo-seccion);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-subtitulo);
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primario), var(--color-acento));
+    border-radius: 2px;
+}
+
+.sobremi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta {
+    background-color: var(--fondo-tarjeta);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--color-borde);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-titulo {
+    font-size: 1.3rem;
+    color: var(--color-acento);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tarjeta-icono {
+    font-size: 1.5rem;
+}
+
+.tarjeta p {
+    color: var(--texto-secundario);
+    line-height: 1.8;
+}
+
+.lista-hobbies {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-hobbies li {
+    padding: 0.5rem 0;
+    color: var(--texto-secundario);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lista-hobbies li::before {
+    content: '✨';
+    color: var(--color-secundario);
+}
+
+/* ============================================
+   SECCIÓN DE CÓDIGO PYTHON
+   ============================================ */
+
+.seccion-codigo {
+    padding: 4rem 2rem;
+    background-color: var(--fondo-principal);
+}
+
+.codigo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .codigo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.panel-codigo {
+    background-color: var(--fondo-seccion);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-borde);
+}
+
+.panel-header {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+    color: var(--texto-claro);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.panel-contenido {
+    padding: 1.5rem;
+}
+
+/* Lista de archivos Python */
+.lista-archivos {
+    list-style: none;
+    padding: 0;
+}
+
+.archivo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--fondo-tarjeta);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-borde);
+}
+
+.archivo-item:hover {
+    background-color: var(--color-primario);
+    color: var(--texto-claro);
+}
+
+.archivo-item:hover .archivo-nombre,
+.archivo-item:hover .archivo-icono {
+    color: var(--texto-claro);
+}
+
+.archivo-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.archivo-icono {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+
+.archivo-nombre {
+    font-weight: 500;
+    color: var(--texto-principal);
+}
+
+.btn-ver {
+    background-color: var(--color-secundario);
+    color: var(--texto-principal);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-ver:hover {
+    background-color: var(--color-terciario);
+    transform: scale(1.05);
+}
+
+/* Editor de código */
+.editor-codigo {
+    width: 100%;
+    min-height: 300px;
+    background-color: #2D2D2D;
+    color: #F8F8F2;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.editor-codigo:focus {
+    outline: 2px solid var(--color-primario);
+}
+
+.panel-botones {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-ejecutar {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+    color: var(--texto-claro);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-ejecutar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-limpiar {
+    background-color: var(--fondo-tarjeta);
+    color: var(--texto-principal);
+    border: 2px solid var(--color-borde);
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-limpiar:hover {
+    background-color: var(--color-borde);
+}
+
+/* Consola de salida */
+.consola-salida {
+    background-color: #1E1E1E;
+    color: #4EC9B0;
+    font-family: 'Courier New', monospace;
+    padding: 1rem;
+    border-radius: 10px;
+    min-height: 150px;
+    margin-top: 1rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.consola-salida.error {
+    color: #F44747;
+}
+
+/* ============================================
+   SECCIÓN ARTÍSTICA - CARRUSEL
+   ============================================ */
+
+.seccion-artistica {
+    padding: 4rem 2rem;
+    background-color: var(--fondo-seccion);
+}
+
+.carrusel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carrusel-slide {
+    display: none;
+    animation: fadeEffect 0.5s ease;
+}
+
+.carrusel-slide.activo {
+    display: block;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.carrusel-imagen {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.carrusel-info {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: var(--texto-claro);
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carrusel-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.carrusel-descripcion {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Botones del carrusel */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--texto-principal);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.carrusel-btn:hover {
+    background-color: var(--texto-claro);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carrusel-btn.anterior {
+    left: 20px;
+}
+
+.carrusel-btn.siguiente {
+    right: 20px;
+}
+
+/* Indicadores del carrusel */
+.carrusel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-borde);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicador.activo {
+    background-color: var(--color-primario);
+    width: 30px;
+    border-radius: 6px;
+}
+
+.indicador:hover {
+    background-color: var(--color-acento);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-texto {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.footer-anio {
+    font-weight: bold;
+}
+
+/* ============================================
+   SECCIÓN 3: DISEÑO RESPONSIVO
+   ============================================
+   ⚠️  IMPORTANTE: NO MODIFIQUES NADA DE ESTA SECCIÓN
+   ⚠️  Esta parte del código hace que tu página se vea 
+   ⚠️  bien en celulares, tablets y computadoras.
+   ⚠️  Si la modificas, puede que tu página se vea mal.
+   ============================================ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .foto-perfil {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .nombre-estudiante {
+        font-size: 1.8rem;
+    }
+    
+    .info-academica {
+        font-size: 1.2rem;
+    }
+    
+    .info-academica span {
+        display: block;
+        margin: 0.3rem 0;
+    }
+    
+    .sobremi-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .codigo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .carrusel-imagen {
+        height: 350px;
+    }
+    
+    .carrusel-titulo {
+        font-size: 1.4rem;
+    }
+    
+    .carrusel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .carrusel-btn.anterior {
+        left: 10px;
+    }
+    
+    .carrusel-btn.siguiente {
+        right: 10px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .seccion-perfil {
+        padding: 2rem 1rem;
+    }
+    
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .nombre-estudiante {
+        font-size: 1.5rem;
+    }
+    
+    .info-academica {
+        font-size: 1rem;
+    }
+    
+    .tarjeta {
+        padding: 1.5rem;
+    }
+    
+    .panel-botones {
+        flex-direction: column;
+    }
+    
+    .btn-ejecutar,
+    .btn-limpiar {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .carrusel-imagen {
+        height: 250px;
+    }
+    
+    .carrusel-info {
+        padding: 1rem;
+    }
+    
+    .carrusel-titulo {
+        font-size: 1.1rem;
+    }
+    
+    .carrusel-descripcion {
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+
+/* Clase para ocultar elementos */
+.oculto {
+    display: none !important;
+}
+
+/* Animación de carga */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cargando {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--texto-claro);
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selección de texto personalizada */
+::selection {
+    background-color: var(--color-primario);
+    color: var(--texto-claro);
+}
